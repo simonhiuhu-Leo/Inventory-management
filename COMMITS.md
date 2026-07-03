@@ -1,4 +1,4 @@
-Commit Story — human-friendly change log
+Commit Story — change log
 
 1) Initial: Project skeleton and API
 
@@ -6,18 +6,18 @@ Commit Story — human-friendly change log
      CLI, and tests. This was the project's starting point — a working demo
      to explore inventory workflows.
 
-2) Make docs human and story-driven
+2) Update README and documentation tone
 
-   - Turn `README.md` into a friendlier narrative that explains the project
-     with quickstart commands, examples, and a pointer to this commit story.
+   - Revise `README.md` to describe the project clearly, with setup commands,
+     examples, and a reference to the commit summary.
 
-3) Make tests read like scenes
+3) Make tests read like scenarios
 
    - Update `test_app.py` so each test carries a short docstring describing
      the scenario it covers. This keeps the suite useful for both checks
-     and human readers who want to follow the expected behavior step-by-step.
+     and readers who want to follow the expected behavior step-by-step.
 
-4) Add CI + extra narrative tests
+4) Add CI + extra external API tests
 
    - Add a GitHub Actions workflow to run the test suite on push and pull requests.
    - Add `tests/test_external_success.py` which mocks successful external API
@@ -26,9 +26,9 @@ Commit Story — human-friendly change log
 
 Notes on committing
 
-- These additions are staged on a feature branch and committed with humanized
-  messages that read like small change-logs. If you want, I can push the branch
-  to a remote and open a pull request.
+- These additions are staged on a feature branch and committed with clear,
+  descriptive messages that document the change history. If you want, I can
+  push the branch to a remote and open a pull request.
 
 Notes on committing
 
