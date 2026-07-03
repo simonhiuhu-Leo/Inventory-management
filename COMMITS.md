@@ -27,10 +27,4 @@ Commit Story — change log
 Notes on committing
 
 - These additions are staged on a feature branch and committed with clear,
-  descriptive messages that document the change history. If you want, I can
-  push the branch to a remote and open a pull request.
-
-Notes on committing
-
-- These notes are written as if they were sequential commits. If you'd like,
-  I can create real git commits with these messages in the repository.
+  descriptive messages that document the change history.

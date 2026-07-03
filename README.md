@@ -1,20 +1,21 @@
-# Inventory Management System — a short story
+# Inventory Management System
 
-Once upon a time there was a tiny inventory service. It kept a list of things, could
-ask an external food database for product details, and let a curious user add, edit,
-or remove items. This repository contains that little service along with a CLI and
-tests that read like short scenes.
+This repository contains a Python Flask REST API for managing inventory items.
+The service supports CRUD operations, external product enrichment via OpenFoodFacts,
+and a CLI for command-line interaction.
 
-## Highlights
+## Features
 
-- CRUD inventory endpoints and a friendly CLI.
-- Search by `name` or `barcode`.
-- Enrich items using the OpenFoodFacts API.
-- Tests written to describe user stories and guard behavior with precision.
+- CRUD inventory endpoints (`GET`, `POST`, `PATCH`, `DELETE`).
+- Search inventory by `name` or `barcode`.
+- Fetch product details from OpenFoodFacts by barcode or name.
+- Add external products directly into inventory.
+- CLI interface for admin-style workflow operations.
+- Automated tests with `pytest`.
 
-## Quickstart
+## Setup
 
-Copy these commands into a terminal in the repository root to get running.
+Run these commands from the repository root.
 
 Create and activate a virtual environment:
 
@@ -23,21 +24,25 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Install required packages:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the API locally:
+## Run the API
+
+Start the Flask application:
 
 ```bash
 python app.py
 ```
 
-The service listens on `http://127.0.0.1:5000` by default.
+The API is available at `http://127.0.0.1:5000`.
 
-## CLI examples (short scenes)
+## CLI Usage
+
+Use the CLI to interact with the API from the command line:
 
 ```bash
 python cli.py list
@@ -49,19 +54,28 @@ python cli.py fetch --barcode 737628064502
 python cli.py add-external --barcode 737628064502 --quantity 5 --price 3.50
 ```
 
-## Tests — run the story-driven suite
+## Tests
 
-Our tests are written as short narratives that make each scenario obvious. Run them with:
+Run the automated tests:
 
 ```bash
 pytest -q
 ```
 
-## Commit history (narrative)
+## GitHub Actions
 
-See the [commit story](COMMITS.md) for step-by-step human-friendly change notes.
+A CI workflow is included at `.github/workflows/pytest.yml` that runs the test
+suite on push and pull request events.
 
-## Contributing
+## Final Submission
 
-If you'd like commits written in a particular voice (short, poetic, or plain), say the word
-and I will continue in that style.
+Submit the repository link below:
+
+https://github.com/simonhiuhu-Leo/Inventory-management
+
+This repo contains the full source code, setup instructions, CLI examples,
+and automated tests required for the assignment.
+
+## Change log
+
+See [COMMITS.md](COMMITS.md) for the change log.
